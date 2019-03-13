@@ -3,7 +3,7 @@ public class Socks {
     public  String size;
     public  String color;
     public  Integer type;
-    public  Integer material;
+    public  Integer material; //почему не сделать поле типа Material? для работы так было бы удобнее
    // public  Integer manufacturer;
    public void SetSize(String value){
        this.size=value;}

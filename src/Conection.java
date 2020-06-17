@@ -4,7 +4,8 @@ import java.sql.DriverManager;
  public  final class Conection {
     private static Connection con;
 
-    static void  OpenConection(String path)
+    static void  OpenConection(String path) //выходит немного неочевидно. чтобы получить конекшн мне нужно дернуть какойто метод который ничего не возвращает.
+     //почему бы не поступить проче и не сделать синглтон который возвращает конекшн, или фабрику, или инициализировать конекшн в конструкторе
     {
         try
         {
@@ -33,7 +34,7 @@ import java.sql.DriverManager;
             }
         }
     }
-    private Conection()
+    private Conection() //а зачем приватный конструктор?
     {
           con= null;
     }

@@ -11,7 +11,10 @@ public class DataBaseSocks {
     Connection con = null;
     Scanner scanner= new Scanner(System.in);
 
-    public  void  InsertDbType(){
+    public  void  InsertDbType(){ //метод содержит очень разнородные операции. 
+        //Почему бы не сделать класс который задает вопросы пользователю в консоли и возвращает Type
+        //и отдельно сделать класс который будет сохранять его в базу (выполнять стандартные операции: удалять добавлять и обновлять) и принимать Type на вход
+
         //Conection.OpenConection("path");
 
         Type tmp=new Type();
@@ -39,8 +42,8 @@ public class DataBaseSocks {
         }
     }
 
-    public  void  InsertDbSocks(){
-
+    public  void  InsertDbSocks(){ //тоже самое что и про Type. В идеале должны быть класы: ReadUserType, ReadUserSock, DAOSOck,DaoType  
+       
         Socks tmp=new Socks();
 
         System.out.print("Enter size");
